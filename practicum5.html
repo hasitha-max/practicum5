@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Craftsphere</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #dcebd1;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #16a2b8;
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 18px 25px;
+            display: block;
+            font-size: 18px;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #e879b4;
+            min-width: 200px;
+            z-index: 10;
+        }
+
+        .dropdown-menu a {
+            padding: 18px 25px;
+            color: white;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown > a::after {
+            content: " ▼";
+            font-size: 12px;
+        }
+
+        .login {
+            border: 1px solid #287020;
+            margin-left: 10px;
+        }
+
+        .signup {
+            border: 1px solid #287020;
+            margin-left: 10px;
+        }
+
+        .navbar a:hover {
+            background-color: #333;
+        }
+
+        /* Center Banner */
+        .banner-container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .banner-container img {
+            width: 525px;
+            max-width: 90%;
+            height: 525px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Copyright */
+        .footer {
+            text-align: center;
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="dropdown">
+            <a href="#">Craftsphere</a>
+            <div class="dropdown-menu">
+                <a href="#">About Us</a>
+                <a href="#">Our Story</a>
+                <a href="#">Our Creators</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Explore</a>
+            <div class="dropdown-menu">
+                <a href="#">Handmade Crafts</a>
+                <a href="#">DIY Projects</a>
+                <a href="#">Creative Ideas</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Ask-Us</a>
+            <div class="dropdown-menu">
+                <a href="#">Crafting Tips</a>
+                <a href="#">Project Help</a>
+                <a href="#">Material Suggestions</a>
+                <a href="#">Creative Ideas</a>
+            </div>
+        </div>
+
+        <a href="#" class="login">Log In</a>
+        <a href="#" class="signup">Sign Up</a>
+
+    </nav>
+
+    <div class="banner-container">
+        <img src="craftsphere logo.jpg"
+             alt="Craftsphere Creative Banner">
+    </div>
+
+    <div class="footer">
+        &copy; Rights reserved by CRAFTSPHERE
+    </div>
+
+</body>
+</html>
